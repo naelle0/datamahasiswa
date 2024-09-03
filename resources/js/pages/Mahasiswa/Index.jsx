@@ -45,15 +45,20 @@ const Index = ({ mahasiswa }) => {
                                     </td>
                                     <td className="px-6 py-4 text-gray-300">{mhs.alamat}</td>
                                     <td className="px-6 py-4">
-                                        <Link href={`/mahasiswa/${mhs.id}/edit`} className="inline-flex items-center px-4 py-2 text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm">
-                                            Edit
+                                    <div className="flex space-x-2">
+                                       <Link
+                                           href={`/mahasiswa/${mhs.id}/edit`}
+                                            className="inline-flex items-center px-4 py-2 text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm"
+                                        >
+                                        Edit
                                         </Link>
                                         <button
-                                            onClick={() => handleDelete(mhs.id)}
-                                            className="inline-flex items-center px-4 py-2 text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm ml-2"
+                                        onClick={() => handleDelete(mhs.id)}
+                                        className="inline-flex items-center px-4 py-2 text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm"
                                         >
-                                            Delete
+                                        Delete
                                         </button>
+                                        </div>
                                     </td>
                                 </tr>
                             ))

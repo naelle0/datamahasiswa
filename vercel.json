@@ -1,0 +1,12 @@
+{
+    "builds": [
+      {
+        "src": "resources/js/app.jsx",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "dist"
+        }
+      }
+    ]
+  }
+  

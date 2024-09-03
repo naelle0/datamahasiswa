@@ -11,7 +11,7 @@ const Navbar = () => {
                             className="mr-2 text-sm font-semibold uppercase text-white"
                             href="/"
                         >
-                            INVENTARIS APP
+                            DATA MANAGEMENT APP
                         </Link>
                         <Link 
                             className="ml-4 text-black"
