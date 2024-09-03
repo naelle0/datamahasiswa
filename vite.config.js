@@ -15,3 +15,4 @@ export default defineConfig({
         outDir: 'dist', // Pastikan output directory adalah 'dist'
     },
 });
+
